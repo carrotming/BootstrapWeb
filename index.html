@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <!--兼容ie-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--视口-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>小猪游戏库</title>
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <!--站点图标-->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <!--[if lt IE 9]>
+    <script src="lib/html5shiv/html5shiv.min.js"></script>
+    <script src="lib/respond/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<!--头部区域-->
+<header id="wjs_header">
+    <!--顶部通栏-->
+    <div class="top-bar  text-center text-muted hidden-xs  hidden-sm">
+        <div class="container">
+            <div class="row">
+                <div class="top-bar-1 col-md-2">
+                    <a href="javascript:;" class="text-muted">
+                        <i class="icon-phone"></i>
+                        <span>手机游戏APP</span>
+                        <span class="caret"></span>
+                        <img src="img/c_06.jpg" class="e-code" width="120" height="136">
+                    </a>
+                </div>
+                <div class="top-bar-2 col-md-5">
+                    <i class="icon-tel"></i>
+                    <span>4006-89-4006（服务时间：不上班）</span>
+                </div>
+                <div class="top-bar-3 col-md-2">
+                    <a href="javascript:;" class="text-muted">常见问题</a>
+                    <a href="javascript:;" class="text-muted">BUG提交</a>
+                </div>
+                <div class="top-bar-4 col-md-3">
+                    <a class="btn btn-sm btn-register" href="#" role="button" data-toggle="modal"
+                       data-target="#btnLogin">免费注册</a>
+                    <a href="javascript:;" class="text-muted" style="margin-left: 10px;">立即登录</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--导航条-->
+    <nav class="navbar navbar-default  navbar-xmg  navbar-static-top" data-spy="affix" data-offset-top="60">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#wjs_nav"
+                        aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <i class=" glyphicon glyphicon-piggy-bank" style="font-size: 50px"></i>
+                    <span style="position: relative;top: -15px;">小猪游戏中心</span>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="wjs_nav">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">首页</a></li>
+                    <li><a href="#">新手区</a></li>
+                    <li><a href="#">游戏介绍</a></li>
+                    <li><a href="#">游戏视频</a></li>
+                    <li><a href="#">充值</a></li>
+                    <li><a href="#">小猪游戏值得你拥有</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm hidden-md">
+                    <li><a href="#">个人中心</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!--模态框-->
+<div class="modal fade" id="btnLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content modal-center">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">欢迎来到注册界面</h4>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <span>用户名:</span> <input type="text" placeholder="请输入用户名">
+                    <span>密码:</span> <input type="password" placeholder="请输入密码">
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary">注册</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--/头部区域-->
+
+<!--轮播图区域-->
+<section id="wjs_carousel" class="carousel slide" data-ride="carousel">
+    <!-- 指示器 -->
+    <ol class="carousel-indicators">
+        <li data-target="#wjs_carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#wjs_carousel" data-slide-to="1"></li>
+        <li data-target="#wjs_carousel" data-slide-to="2"></li>
+        <li data-target="#wjs_carousel" data-slide-to="3"></li>
+    </ol>
+    <!-- 中间滚动内容 -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <div class="pic1"><img src="img/smimg1.jpg"></div>
+        </div>
+        <div class="item">
+            <div class="pic2"><img src="img/smimg2.jpg"></div>
+
+        </div>
+        <div class="item">
+            <div class="pic3"><img src="img/smimg3.jpg"></div>
+        </div>
+        <div class="item">
+            <div class="pic4"><img src="img/smimg4.jpg"></div>
+        </div>
+    </div>
+    <!-- 控制 -->
+    <a class="left carousel-control" href="#wjs_carousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">上一张</span>
+    </a>
+    <a class="right carousel-control" href="#wjs_carousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">下一张</span>
+    </a>
+
+</section>
+<!--/焦点图区域-->
+
+<!--支付中心区域-->
+<section id="wjs_feature" class=" hidden-xs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="media text-muted">
+                    <div class="media-heading pull-left">
+                        <i class="icon-uniE907"></i>
+                    </div>
+                    <div class="media-body">
+                        <dt>支付交易保证</dt>
+                        <dd>银联支付全程保证安全</dd>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="media text-muted">
+                    <div class="media-heading pull-left">
+                        <i class="icon-uniE907"></i>
+                    </div>
+                    <div class="media-body">
+                        <dt>支付交易保证</dt>
+                        <dd>银联支付全程保证安全</dd>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="media text-muted">
+                    <div class="media-heading pull-left">
+                        <i class="icon-uniE907"></i>
+                    </div>
+                    <div class="media-body">
+                        <dt>支付交易保证</dt>
+                        <dd>银联支付全程保证安全</dd>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="media text-muted">
+                    <div class="media-heading pull-left">
+                        <i class="icon-uniE907"></i>
+                    </div>
+                    <div class="media-body">
+                        <dt>支付交易保证</dt>
+                        <dd>银联支付全程保证安全</dd>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="media text-muted">
+                    <div class="media-heading pull-left">
+                        <i class="icon-uniE907"></i>
+                    </div>
+                    <div class="media-body">
+                        <dt>支付交易保证</dt>
+                        <dd>银联支付全程保证安全</dd>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="media text-muted">
+                    <div class="media-heading pull-left">
+                        <i class="icon-uniE907"></i>
+                    </div>
+                    <div class="media-body">
+                        <dt>支付交易保证</dt>
+                        <dd>银联支付全程保证安全</dd>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/平台特色区域-->
+
+<!--下载区域-->
+<section id="wjs_order" class="text-muted">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9  ">
+                <i class="icon-uniE906"></i>
+                <span style="margin: 0"> 现在有<strong class="text-danger">10000</strong>人在下载游戏,累计下载游戏人数<strong
+                        class="text-danger">100000000</strong>次.什么是小猪游戏？<a
+                        href="javascript:;" class="text-muted">立即下载</a> </span>
+            </div>
+            <div class="col-md-3 hidden-sm hidden-xs">
+                <i class="icon-uniE905"></i>
+                <a href="javascript:;" class="text-muted" style="font-size: 16px">小猪游戏宣传片</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/立即预约区域-->
+
+<!--产品中心区域-->
+<section id="wjs_product">
+    <div class="container">
+        <div class="row">
+            <div style="overflow: auto">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#product1" aria-controls="product1" role="tab"
+                                                              data-toggle="tab">优惠卷</a></li>
+                    <li role="presentation"><a href="#product2" aria-controls="product2" role="tab" data-toggle="tab">装备区</a>
+                    </li>
+                    <li role="presentation"><a href="#product3" aria-controls="product3" role="tab" data-toggle="tab">攻略区</a>
+                    </li>
+                    <li role="presentation"><a href="#product4" aria-controls="product4" role="tab" data-toggle="tab">视频区</a>
+                    </li>
+                    <li role="presentation"><a href="#product5" aria-controls="product5" role="tab" data-toggle="tab">BUG区</a>
+                    </li>
+                    <li role="presentation"><a href="#product6" aria-controls="product6" role="tab" data-toggle="tab">游戏截图</a>
+                    </li>
+                    <li role="presentation"><a href="#product7" aria-controls="product7" role="tab" data-toggle="tab">游戏论坛</a>
+                    </li>
+                    <!--右边-->
+                    <li class="pull-right hidden-xs hidden-sm"><a href="javascript:;" class="more">更多</a></li>
+                </ul>
+            </div>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="product1">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="panel-product current">
+                                    <div class="panel-heading">
+                                        <div>
+                                            <strong>5</strong><sub>%</sub>
+                                            <br>
+                                            <span>优惠率</span>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <h3 class="" data-toggle="tooltip" data-placement="right" title="快点买啊">
+                                            优惠卷100万元</h3>
+                                        <div class="row">
+                                            <div class="col-xs-6">
+                                                <dt>原来价钱</dt>
+                                                <dd>优惠10<sub>元</sub></dd>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <dt>原来价钱(元)</dt>
+                                                <dd>优惠10<sub>万</sub></dd>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <dt>原来价钱(元)</dt>
+                                                <dd>优惠10<sub>万</sub></dd>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <dt>原来价钱(元)</dt>
+                                                <dd>优惠10<sub>万</sub></dd>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="panel-product current2">
+                                    <div class="panel-heading">
+                                        <div>
+                                            <strong>5</strong><sub>%</sub>
+                                            <br>
+                                            <span>优惠率</span>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <h3 class="" data-toggle="tooltip" data-placement="left" title="快点买啊">
+                                            优惠卷100万元</h3>
+                                        <div class="row">
+                                            <div class="col-xs-6">
+                                                <dt>原来价钱</dt>
+                                                <dd>优惠10<sub>元</sub></dd>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <dt>原来价钱(元)</dt>
+                                                <dd>优惠10<sub>万</sub></dd>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <dt>原来价钱(元)</dt>
+                                                <dd>优惠10<sub>万</sub></dd>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <dt>原来价钱(元)</dt>
+                                                <dd>优惠10<sub>万</sub></dd>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="panel-product current3">
+                                    <div class="panel-heading">
+                                        <div>
+                                            <strong>5</strong><sub>%</sub>
+                                            <br>
+                                            <span>优惠率</span>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <h3 class="" data-toggle="tooltip" data-placement="left" title="快点买啊">
+                                            优惠卷100万元</h3>
+                                        <div class="row">
+                                            <div class="col-xs-6">
+                                                <dt>原来价钱</dt>
+                                                <dd>优惠10<sub>元</sub></dd>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <dt>原来价钱(元)</dt>
+                                                <dd>优惠10<sub>万</sub></dd>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <dt>原来价钱(元)</dt>
+                                                <dd>优惠10<sub>万</sub></dd>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <dt>原来价钱(元)</dt>
+                                                <dd>优惠10<sub>万</sub></dd>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="panel-product current1">
+                                    <div class="panel-heading">
+                                        <div>
+                                            <strong>5</strong><sub>%</sub>
+                                            <br>
+                                            <span>优惠率</span>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <h3 class="" data-toggle="tooltip" data-placement="left" title="快点买啊">
+                                            优惠卷100万元</h3>
+                                        <div class="row">
+                                            <div class="col-xs-6">
+                                                <dt>原来价钱</dt>
+                                                <dd>优惠10<sub>元</sub></dd>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <dt>原来价钱(元)</dt>
+                                                <dd>优惠10<sub>万</sub></dd>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <dt>原来价钱(元)</dt>
+                                                <dd>优惠10<sub>万</sub></dd>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <dt>原来价钱(元)</dt>
+                                                <dd>优惠10<sub>万</sub></dd>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="panel-product current">
+                                    <div class="panel-heading">
+                                        <div>
+                                            <strong>5</strong><sub>%</sub>
+                                            <br>
+                                            <span>优惠率</span>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <h3 class="" data-toggle="tooltip" data-placement="left" title="快点买啊">
+                                            优惠卷100万元</h3>
+                                        <div class="row">
+                                            <div class="col-xs-6">
+                                                <dt>原来价钱</dt>
+                                                <dd>优惠10<sub>元</sub></dd>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <dt>原来价钱(元)</dt>
+                                                <dd>优惠10<sub>万</sub></dd>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <dt>原来价钱(元)</dt>
+                                                <dd>优惠10<sub>万</sub></dd>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <dt>原来价钱(元)</dt>
+                                                <dd>优惠10<sub>万</sub></dd>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="panel-product current">
+                                    <div class="panel-heading">
+                                        <div>
+                                            <strong>5</strong><sub>%</sub>
+                                            <br>
+                                            <span>优惠率</span>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <h3 class="" data-toggle="tooltip" data-placement="left" title="快点买啊">
+                                            优惠卷100万元</h3>
+                                        <div class="row">
+                                            <div class="col-xs-6">
+                                                <dt>原来价钱</dt>
+                                                <dd>优惠10<sub>元</sub></dd>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <dt>原来价钱(元)</dt>
+                                                <dd>优惠10<sub>万</sub></dd>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <dt>原来价钱(元)</dt>
+                                                <dd>优惠10<sub>万</sub></dd>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <dt>原来价钱(元)</dt>
+                                                <dd>优惠10<sub>万</sub></dd>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<!--/产品中心区域-->
+
+<!--新闻中心区域-->
+<section id="wjs_news">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-md-offset-2">
+                <h3>全部新闻</h3>
+            </div>
+            <div class="col-md-1">
+                <ul class="nav nav-pills nav-stacked">
+                    <li role="presentation" class="active"><a href="#news1" aria-controls="news1" role="tab"
+                                                              data-toggle="tab">
+                        <i class="icon-news01"></i>
+                    </a></li>
+                    <li role="presentation"><a href="#news2" aria-controls="news2" role="tab" data-toggle="tab">
+                        <i class="icon-news02"></i>
+                    </a></li>
+                    <li role="presentation"><a href="#news3" aria-controls="news3" role="tab" data-toggle="tab">
+                        <i class="icon-news03"></i>
+                    </a></li>
+                    <li role="presentation"><a href="#news4" aria-controls="news4" role="tab" data-toggle="tab">
+                        <i class="icon-news04"></i>
+                    </a></li>
+                </ul>
+            </div>
+            <div class="col-md-7">
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane  fade in active" id="news1">
+                        <ul class="nav">
+                            <li>没有新闻啊,怎么办啊,那就别看咯,赶紧下载游戏去玩吧!!!!</li>
+                            <li>没有新闻啊,怎么办啊,那就别看咯,赶紧下载游戏去玩吧!!!!</li>
+                            <li>没有新闻啊,怎么办啊,那就别看咯,赶紧下载游戏去玩吧!!!!</li>
+                            <li>没有新闻啊,怎么办啊,那就别看咯,赶紧下载游戏去玩吧!!!!</li>
+                            <li>没有新闻啊,怎么办啊,那就别看咯,赶紧下载游戏去玩吧!!!!</li>
+                            <li>没有新闻啊,怎么办啊,那就别看咯,赶紧下载游戏去玩吧!!!!</li>
+                            <li>没有新闻啊,怎么办啊,那就别看咯,赶紧下载游戏去玩吧!!!!</li>
+                        </ul>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="news2">
+                        <ul class="nav">
+                            <li>没有新闻啊,怎么办啊,那就别看咯,赶紧下载游戏去玩吧!!!!</li>
+                            <li>没有新闻啊,怎么办啊,那就别看咯,赶紧下载游戏去玩吧!!!!</li>
+                            <li>没有新闻啊,怎么办啊,那就别看咯,赶紧下载游戏去玩吧!!!!</li>
+                            <li>没有新闻啊,怎么办啊,那就别看咯,赶紧下载游戏去玩吧!!!!</li>
+                            <li>没有新闻啊,怎么办啊,那就别看咯,赶紧下载游戏去玩吧!!!!</li>
+                            <li>没有新闻啊,怎么办啊,那就别看咯,赶紧下载游戏去玩吧!!!!</li>
+                            <li>没有新闻啊,怎么办啊,那就别看咯,赶紧下载游戏去玩吧!!!!</li>
+                        </ul>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="news3">
+                        <ul class="nav">
+                            <li>没有新闻啊,怎么办啊,那就别看咯,赶紧下载游戏去玩吧!!!!</li>
+                            <li>没有新闻啊,怎么办啊,那就别看咯,赶紧下载游戏去玩吧!!!!</li>
+                            <li>没有新闻啊,怎么办啊,那就别看咯,赶紧下载游戏去玩吧!!!!</li>
+                            <li>没有新闻啊,怎么办啊,那就别看咯,赶紧下载游戏去玩吧!!!!</li>
+                            <li>没有新闻啊,怎么办啊,那就别看咯,赶紧下载游戏去玩吧!!!!</li>
+                            <li>没有新闻啊,怎么办啊,那就别看咯,赶紧下载游戏去玩吧!!!!</li>
+                            <li>没有新闻啊,怎么办啊,那就别看咯,赶紧下载游戏去玩吧!!!!</li>
+                        </ul>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="news4">
+                        <ul class="nav">
+                            <li>没有新闻啊,怎么办啊,那就别看咯,赶紧下载游戏去玩吧!!!!</li>
+                            <li>没有新闻啊,怎么办啊,那就别看咯,赶紧下载游戏去玩吧!!!!</li>
+                            <li>没有新闻啊,怎么办啊,那就别看咯,赶紧下载游戏去玩吧!!!!</li>
+                            <li>没有新闻啊,怎么办啊,那就别看咯,赶紧下载游戏去玩吧!!!!</li>
+                            <li>没有新闻啊,怎么办啊,那就别看咯,赶紧下载游戏去玩吧!!!!</li>
+                            <li>没有新闻啊,怎么办啊,那就别看咯,赶紧下载游戏去玩吧!!!!</li>
+                            <li>没有新闻啊,怎么办啊,那就别看咯,赶紧下载游戏去玩吧!!!!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/新闻中心区域-->
+
+<!--尾部区域-->
+<footer id="wjs_footer" class="hidden-xs hidden-sm">
+    <div class="container">
+        <div class="row text-center">
+            <h3>合作伙伴</h3>
+            <ul class="nav">
+                <li><a href="javascript:;"><i class="icon-uniE930"></i></a></li>
+                <li><a href="javascript:;"><i class="icon-uniE92F"></i></a></li>
+                <li><a href="javascript:;"><i class="icon-uniE92E"></i></a></li>
+                <li><a href="javascript:;"><i class="icon-uniE92A"></i></a></li>
+                <li><a href="javascript:;"><i class="icon-uniE929"></i></a></li>
+                <li><a href="javascript:;"><i class="icon-uniE931"></i></a></li>
+                <li><a href="javascript:;"><i class="icon-uniE92C"></i></a></li>
+                <li><a href="javascript:;"><i class="icon-uniE92B"></i></a></li>
+                <li><a href="javascript:;"><i class="icon-uniE92D"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<!--/尾部区域-->
+
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>
