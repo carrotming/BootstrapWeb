@@ -1,3 +1,3 @@
 # BootstrapWeb
 
-(预览)[http://carrotming.cn/BootstrapWeb/]
+[预览](http://carrotming.cn/BootstrapWeb)
